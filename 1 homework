@@ -1,0 +1,63 @@
+#include <iostream>
+ 
+int main(){
+    const float p=3.14;
+    std::string a;
+    double value;
+    std::cout << ("Введите изначальную форму 1-квадрат,2-круг,3-прямоугольник");
+    std::cin >> a;
+
+    if (a == "1"){
+        std::cout << ("Введите данные сторны");
+        std::cin >> value;
+        double area = value * value;
+        std::cout << "S=" << area << std::endl;
+        
+    } else if (a == "2"){
+    std::cout << ("Введите радиус");
+    std::cin >> value;
+    double area = value * value * p;
+    std::cout << "S=" << area << std::endl;
+   } else if (a == "3"){
+       double width, value;
+       std::cout << ("Введите значение длины");
+       std::cin >> value;
+       std::cout << ("Введите значение ширины");
+       std::cin >> width;
+       double area = value * width;
+       std::cout << "S=" << area << std::endl;
+   }
+   std::string b;
+   double vindows;
+   std::cout << ("Введите конечную форму 1-квадрат,2-круг,3-прямоугольник");
+    std::cin >> b;
+
+    if (b == "1"){
+        std::cout << ("Введите данные сторны");
+        std::cin >> vindows;
+        double area = vindows * vindows;
+        std::cout << "S=" << area << std::endl;
+        
+    } else if (b == "2"){
+    std::cout << ("Введите радиус");
+    std::cin >> vindows;
+    double area = vindows * value * p;
+    std::cout << "S=" << area << std::endl;
+   } else if (b == "3"){
+       double width, vindows;
+       std::cout << ("Введите значение длины");
+       std::cin >> vindows;
+       std::cout << ("Введите значение ширины");
+       std::cin >> width;
+       double area = vindows * width;
+       std::cout << "S=" << area << std::endl;
+   }
+   std::string c;
+   int ronin,sekiro;
+   std::cout << ("Введите первую площадь");
+   std::cin >> ronin;
+   std::cout << ("Введите вторую площадь");
+   std::cin >> sekiro;
+   int area = ronin / sekiro;
+   std::cout << "s=" << area << endl;
+}
